@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kdexio.github.io/SkillBattleHub/sitemap.xml
