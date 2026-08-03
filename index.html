@@ -1,1 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Skill Battle Hub - Free Fire Tournament App | Free Daily Matches</title>
+<meta name="description" content="Skill Battle Hub — India's fair-play Free Fire tournament app. No deposit needed, only free tournaments, daily lottery, and honest rewards. Download the APK now.">
+<meta name="keywords" content="Skill Battle Hub, Free Fire Tournament, Free Fire App, Gaming App, APK Download, Free Tournament App, Free Fire Lottery">
+<link rel="canonical" href="https://kdexio.github.io/SkillBattleHub">
+<link rel="icon" type="image/jpeg" href="https://i.ibb.co/JwQvvGMn/IMG-20260719-WA0000.jpg">
 
+<meta property="og:type" content="website">
+<meta property="og:title" content="Skill Battle Hub - Free Fire Tournament App">
+<meta property="og:description" content="India's fair-play Free Fire tournament app. No deposit needed, only free tournaments, daily lottery, and honest rewards.">
+<meta property="og:image" content="https://i.ibb.co/JwQvvGMn/IMG-20260719-WA0000.jpg">
+<meta property="og:url" content="https://kdexio.github.io/SkillBattleHub">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Skill Battle Hub",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "GameApplication",
+  "image": "https://i.ibb.co/JwQvvGMn/IMG-20260719-WA0000.jpg",
+  "downloadUrl": "https://github.com/kdexio/Skill-battle-hub-/releases/download/v1.0.1/Skill-Battle-Hub.apk",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" }
+}
+</script>
+
+<style>
+  :root{
+    --bg:#ffffff; --text:#111114; --textSec:#5b5b66;
+    --purple:#7C3AED; --blue:#3B5BDB;
+    --grad:linear-gradient(135deg,var(--purple),var(--blue));
+    --divider:#ececf1;
+    --maxw:1040px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+    line-height:1.65; -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit; text-decoration:none;}
+  img{max-width:100%; display:block;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+  @media(min-width:900px){ .wrap{padding:0 40px;} }
+
+  .icon{
+    width:26px; height:26px; flex-shrink:0; color:var(--purple);
+  }
+  .icon svg{width:100%; height:100%;}
+
+  /* ---------- Header ---------- */
+  header{
+    display:flex; align-items:center; gap:11px; padding:18px 24px;
+    border-bottom:1px solid var(--divider); position:sticky; top:0; background:rgba(255,255,255,0.92);
+    backdrop-filter:blur(8px); z-index:10;
+  }
+  header img{width:40px; height:40px; border-radius:11px; object-fit:cover;}
+  header .brand{font-size:17px; font-weight:800; letter-spacing:-0.01em;}
+
+  /* ---------- Hero ---------- */
+  .hero{text-align:center; padding:64px 24px 44px;}
+  .hero h1{
+    font-size:clamp(28px,5vw,42px); font-weight:800; letter-spacing:-0.02em;
+    margin-bottom:16px; line-height:1.15;
+  }
+  .hero h1 span{
+    background:var(--grad); -webkit-background-clip:text; background-clip:text; color:transparent;
+  }
+  .hero p{
+    color:var(--textSec); font-size:15.5px; max-width:540px; margin:0 auto 30px;
+  }
+  .btn{
+    display:inline-flex; align-items:center; gap:9px; padding:16px 36px; border-radius:14px;
+    background:var(--grad); color:#fff; font-weight:700; font-size:15.5px;
+    box-shadow:0 14px 34px rgba(90,50,220,0.28);
+  }
+  .btn svg{width:19px; height:19px;}
+  .badge{color:var(--textSec); font-size:12.5px; margin-top:16px; font-weight:500;}
+
+  /* ---------- Sections ---------- */
+  section{padding:56px 24px;}
+  section.altbg{background:#fbfaff;}
+  .sectionHead{text-align:center; max-width:560px; margin:0 auto 40px;}
+  .sectionHead h2{
+    font-size:clamp(21px,3.4vw,27px); font-weight:800; letter-spacing:-0.01em; margin-bottom:8px;
+  }
+  .sectionHead p{color:var(--textSec); font-size:14px;}
+
+  .itemGrid{
+    display:grid; gap:36px 40px; max-width:920px; margin:0 auto;
+  }
+  @media(min-width:640px){ .itemGrid.cols2{grid-template-columns:1fr 1fr;} }
+  @media(min-width:900px){ .itemGrid.cols3{grid-template-columns:1fr 1fr 1fr;} }
+
+  .item{display:flex; gap:16px; align-items:flex-start;}
+  .item .iconWrap{
+    width:48px; height:48px; border-radius:13px; flex-shrink:0;
+    display:flex; align-items:center; justify-content:center;
+    background:linear-gradient(135deg, rgba(124,58,237,0.10), rgba(59,91,219,0.10));
+  }
+  .item .iconWrap .icon{width:24px; height:24px;}
+  .item h3{font-size:15.5px; font-weight:700; margin-bottom:5px;}
+  .item p{color:var(--textSec); font-size:13.5px;}
+
+  /* Withdrawal method — simple label row, no card look */
+  .methodRow{
+    display:grid; grid-template-columns:repeat(2,1fr); gap:0; max-width:640px; margin:0 auto;
+  }
+  @media(min-width:640px){ .methodRow{grid-template-columns:repeat(3,1fr);} }
+  .methodItem{
+    display:flex; align-items:center; gap:10px; padding:16px 6px;
+    border-bottom:1px solid var(--divider);
+  }
+  .methodItem .icon{width:20px; height:20px;}
+  .methodItem span{font-size:14px; font-weight:600;}
+
+  /* ---------- Policy text ---------- */
+  .policyText{max-width:720px; margin:0 auto; color:var(--textSec); font-size:13.5px;}
+  .policyText p{margin-bottom:14px;}
+  .policyText strong{color:var(--text);}
+
+  footer{
+    padding:34px 24px 40px; text-align:center; color:var(--textSec); font-size:12.5px;
+    border-top:1px solid var(--divider);
+  }
+  footer a{color:var(--purple); font-weight:600;}
+</style>
+</head>
+<body>
+
+<header>
+  <a href="https://kdexio.github.io/SkillBattleHub">
+    <img src="https://i.ibb.co/JwQvvGMn/IMG-20260719-WA0000.jpg" alt="Skill Battle Hub Logo">
+  </a>
+  <span class="brand">Skill Battle Hub</span>
+</header>
+
+<div class="hero wrap">
+  <h1>Welcome To <span>Skill Battle Hub</span></h1>
+  <p>We are different because we organize only free tournaments — no deposit option in our app. Fair policy, fair gameplay, fair results, and fair rewards for every single player, every single time.</p>
+  <a class="btn" href="https://github.com/kdexio/Skill-battle-hub-/releases/download/v1.0.1/Skill-Battle-Hub.apk">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v13"/><path d="m7 11 5 5 5-5"/><path d="M5 21h14"/></svg>
+    Download Official APK
+  </a>
+  <div class="badge">100% Safe &amp; Secure · v1.0.1 (Android)</div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="sectionHead">
+      <h2>Why Choose Us</h2>
+    </div>
+    <div class="itemGrid cols2">
+      <div class="item">
+        <div class="iconWrap"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5z"/><path d="m9 12 2 2 4-4"/></svg></span></div>
+        <div>
+          <h3>No Deposit System</h3>
+          <p>Aapko wallet mein paise daalne ki koi zaroorat nahi — humne deposit option app se hata diya hai.</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="iconWrap"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 7h14"/><path d="M5 7 2 13a3 3 0 0 0 6 0Z"/><path d="M19 7l-3 6a3 3 0 0 0 6 0Z"/></svg></span></div>
+        <div>
+          <h3>Fair Policy</h3>
+          <p>Sab players ke liye ek jaisi transparent policy, koi favoritism nahi.</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="iconWrap"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 10v.01"/><path d="M18 14v.01"/></svg></span></div>
+        <div>
+          <h3>Fair Gameplay</h3>
+          <p>Cheating aur unfair tactics par strict action, sabko barabar mauka.</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="iconWrap"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8"/><path d="M12 17v4"/><path d="M7 4h10v5a5 5 0 0 1-10 0Z"/><path d="M17 5h3a2 2 0 0 1-2 4h-1"/><path d="M7 5H4a2 2 0 0 0 2 4h1"/></svg></span></div>
+        <div>
+          <h3>Fair Result &amp; Reward</h3>
+          <p>Match results honestly declare hote hain, aur reward turant credit hota hai.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="altbg">
+  <div class="wrap">
+    <div class="sectionHead">
+      <h2>Withdrawal Method</h2>
+      <p>Winnings ko in tareeko se seedha withdraw karo</p>
+    </div>
+    <div class="methodRow">
+      <div class="methodItem"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span><span>Google Pay</span></div>
+      <div class="methodItem"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span><span>PhonePe</span></div>
+      <div class="methodItem"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span><span>UPI</span></div>
+      <div class="methodItem"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10 12 3l9 7"/><path d="M5 10v9"/><path d="M19 10v9"/><path d="M9 19v-6h6v6"/><path d="M3 19h18"/></svg></span><span>Bank Account</span></div>
+      <div class="methodItem"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span><span>Amazon Pay</span></div>
+      <div class="methodItem"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m20 12-8-8-8 8 8 8Z"/><path d="M12 8v8"/></svg></span><span>Redeem Code</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sectionHead">
+      <h2>Features</h2>
+    </div>
+    <div class="itemGrid cols2">
+      <div class="item">
+        <div class="iconWrap"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></span></div>
+        <div>
+          <h3>Daily 10-20 Free Tournaments</h3>
+          <p>Har din multiple free match tournaments join karo, koi entry fee nahi.</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="iconWrap"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12v-2a3 3 0 0 1 6 0v2"/><rect x="4" y="12" width="16" height="8" rx="2"/><path d="M12 16v2"/></svg></span></div>
+        <div>
+          <h3>Daily Lottery</h3>
+          <p>Roz naye lottery draws mein participate karo aur rewards jeeto.</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="iconWrap"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg></span></div>
+        <div>
+          <h3>Fast &amp; Lightweight</h3>
+          <p>App low data aur kam storage mein bhi smoothly chalti hai.</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="iconWrap"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span></div>
+        <div>
+          <h3>Secure Platform</h3>
+          <p>Trusted platform with genuine gamers aur fair reward system.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="altbg">
+  <div class="wrap">
+    <div class="sectionHead"><h2>Privacy Policy</h2></div>
+    <div class="policyText">
+      <p>Skill Battle Hub ("we", "our", "app") aapki privacy ko seriously leta hai. Ye policy batati hai ki hum kya data collect karte hain aur usko kaise use karte hain.</p>
+      <p><strong>Hum kya collect karte hain:</strong> Username, Free Fire in-game ID, basic device information, aur gameplay activity (matches joined, results) — tournaments fairly conduct karne aur fraud rokne ke liye.</p>
+      <p><strong>Ads:</strong> App mein third-party ad network (Unity Ads) use hota hai jo device identifiers collect kar sakta hai apni policy ke mutabik.</p>
+      <p><strong>Payment details:</strong> Withdrawal ke liye diye gaye UPI/bank/wallet details sirf reward process karne ke liye use hote hain, kisi third party ko sell nahi kiye jaate.</p>
+      <p><strong>Data sharing:</strong> Hum aapka personal data kisi ko bechte nahi hain. Sirf legal requirement hone par authorities ke saath share kiya ja sakta hai.</p>
+      <p>Kisi bhi sawaal ke liye humein <a href="mailto:skillbattlehub@gmail.com">skillbattlehub@gmail.com</a> par contact karein.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sectionHead"><h2>Terms and Conditions</h2></div>
+    <div class="policyText">
+      <p>App use karke aap in terms se agree karte hain:</p>
+      <p><strong>Eligibility:</strong> App use karne ke liye aapki age applicable local laws ke mutabik honi chahiye.</p>
+      <p><strong>Fair Play:</strong> Cheating, hacking, ya kisi bhi tarah ki unfair activity paayi gayi to account permanently ban ho sakta hai aur pending rewards forfeit ho sakte hain.</p>
+      <p><strong>Free Entry:</strong> Sabhi tournaments free hain — koi entry deposit required nahi hai.</p>
+      <p><strong>Rewards:</strong> Winners ko rewards wallet mein credit kiye jaate hain, jo listed withdrawal methods se redeem kiye ja sakte hain, admin verification ke baad.</p>
+      <p><strong>Changes:</strong> Hum kabhi bhi rules, features, ya terms ko update karne ka adhikar rakhte hain.</p>
+      <p><strong>"As-Is" Basis:</strong> App "as-is" provide ki jaati hai, hum uninterrupted ya error-free service ki guarantee nahi dete.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 Skill Battle Hub. All rights reserved.</p>
+  <p style="margin-top:6px;">Contact: <a href="mailto:skillbattlehub@gmail.com">skillbattlehub@gmail.com</a></p>
+</footer>
+
+</body>
+  </html>
